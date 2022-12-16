@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: flaskApp
+Version: 1.0.0
+Summary: The basic Organizational app built entirely using flask.
+Home-page: '#'
+Maintainer: Nagarro
+Maintainer-email: nilesh.tiwari@nagarro.com
+License: BSD-3-Clause
+Provides-Extra: test
+License-File: LICENSE.rst

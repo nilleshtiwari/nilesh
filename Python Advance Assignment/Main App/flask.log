@@ -1,0 +1,100 @@
+[December 11, 2022 18:20:35 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:20:35 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:20:35 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:20:35 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:20:35 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[December 11, 2022 18:20:35 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[December 11, 2022 18:20:57 India Standard Time] ERROR | app >>> Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\nileshtiwari\Desktop\AdvancedPython\flaskApp\auth.py", line 36, in wrapped_view
+    return view(**kwargs)
+  File "c:\Users\nileshtiwari\Desktop\AdvancedPython\flaskApp\engine.py", line 27, in index
+    bp.logger.info("A user visited the home page >>> %s", session["ctx"])
+AttributeError: 'Blueprint' object has no attribute 'logger'
+[December 11, 2022 18:20:57 India Standard Time] ERROR | app >>> Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\nileshtiwari\Desktop\AdvancedPython\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\nileshtiwari\Desktop\AdvancedPython\flaskApp\auth.py", line 36, in wrapped_view
+    return view(**kwargs)
+  File "c:\Users\nileshtiwari\Desktop\AdvancedPython\flaskApp\engine.py", line 27, in index
+    bp.logger.info("A user visited the home page >>> %s", session["ctx"])
+AttributeError: 'Blueprint' object has no attribute 'logger'
+[December 11, 2022 18:20:57 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:20:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[December 11, 2022 18:20:57 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:20:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[December 11, 2022 18:41:47 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:41:47 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:41:47 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:41:47 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:41:47 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[December 11, 2022 18:41:47 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[December 11, 2022 18:42:00 India Standard Time] INFO | engine >>> A user visited the home page >>> {'request_id': 'c62482c5-28e0-4336-8e48-bb699ad5f939'}
+[December 11, 2022 18:42:00 India Standard Time] INFO | engine >>> A user visited the home page >>> {'request_id': 'c62482c5-28e0-4336-8e48-bb699ad5f939'}
+[December 11, 2022 18:42:00 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:00] "GET / HTTP/1.1" 200 -
+[December 11, 2022 18:42:00 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:00] "GET / HTTP/1.1" 200 -
+[December 11, 2022 18:42:00 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:00] "GET /static/style.css HTTP/1.1" 200 -
+[December 11, 2022 18:42:00 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:00] "GET /static/style.css HTTP/1.1" 200 -
+[December 11, 2022 18:42:15 India Standard Time] INFO | engine >>> A user visited the home page >>> {'request_id': '768fa533-9f78-4ed4-906b-17213564f1e8'}
+[December 11, 2022 18:42:15 India Standard Time] INFO | engine >>> A user visited the home page >>> {'request_id': '768fa533-9f78-4ed4-906b-17213564f1e8'}
+[December 11, 2022 18:42:15 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:15] "[32mPOST / HTTP/1.1[0m" 302 -
+[December 11, 2022 18:42:15 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:15] "[32mPOST / HTTP/1.1[0m" 302 -
+[December 11, 2022 18:42:15 India Standard Time] INFO | engine >>> A user deleted the employee whose email address was nil3@gmail.com 
+[December 11, 2022 18:42:15 India Standard Time] INFO | engine >>> A user deleted the employee whose email address was nil3@gmail.com 
+[December 11, 2022 18:42:15 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:15] "[32mGET /employee/delete/nil3%40gmail.com HTTP/1.1[0m" 302 -
+[December 11, 2022 18:42:15 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:15] "[32mGET /employee/delete/nil3%40gmail.com HTTP/1.1[0m" 302 -
+[December 11, 2022 18:42:16 India Standard Time] INFO | engine >>> A user visited the home page >>> {'request_id': '6f6f4ee4-2589-4b33-8ef2-1710db2f5cee'}
+[December 11, 2022 18:42:16 India Standard Time] INFO | engine >>> A user visited the home page >>> {'request_id': '6f6f4ee4-2589-4b33-8ef2-1710db2f5cee'}
+[December 11, 2022 18:42:16 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:16] "GET /employee HTTP/1.1" 200 -
+[December 11, 2022 18:42:16 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:16] "GET /employee HTTP/1.1" 200 -
+[December 11, 2022 18:42:16 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[December 11, 2022 18:42:16 India Standard Time] INFO | _internal >>> 127.0.0.1 - - [11/Dec/2022 18:42:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[December 11, 2022 18:43:06 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:43:06 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:43:06 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:43:06 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:43:06 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[December 11, 2022 18:43:06 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[December 11, 2022 18:43:20 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:43:20 India Standard Time] INFO | setup >>> App started...
+[December 11, 2022 18:43:20 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:43:20 India Standard Time] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.144.196:5000
+[December 11, 2022 18:43:20 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[December 11, 2022 18:43:20 India Standard Time] INFO | _internal >>> [33mPress CTRL+C to quit[0m

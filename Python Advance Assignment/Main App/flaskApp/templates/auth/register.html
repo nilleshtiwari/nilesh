@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %}
+Register Page
+{% endblock %}
+{% block content %}
+
+<body class="bodyRegister">
+    <div class="container dark-background  ">
+        <form  method="post" role="form" style="color:white">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+            {% if session['role']=='admin' %}
+            <h1 class="h3  font-weight-normal">
+                Register a new Employee
+            </h1>
+            {%else%}
+            
+            <h1 class="h3  font-weight-normal  ">Register Yourself
+            </h1>
+            {%endif%}
+            
+                <div class="form-group row">
+                    <div class="col-sm-3" >
+                        <label class=" control-label" for="FirstName">First Name</label>
+                        <input class=" form-control" type="text" name="FirstName" id="FirstName" required>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <label class="control-label" for="LastName">Last Name</label>
+                        <input class=" form-control" type="text" name="LastName" id="LastName" required>
+                    </div>
+                </div>
+
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label class=" control-label" for="email_address">Email address</label>
+                    <input class="form-control" type="email" name="email_address" id="email_address" required>
+
+                </div>
+                <div class="col-sm-3">
+                    <label class="control-label" for="PhoneNumber">Phone number</label>
+                    <input class="form-control" type="tel" name="PhoneNumber" id="PhoneNumber" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label class=" control-label" for="DOB">Date of birth</label>
+                    <input class="form-control" type="date" placeholder="dd-mm-yyyy" name="DOB" id="DOB" required>
+                </div>
+                <div class="col-sm-3">
+                    <label class=" control-label" for="address">Address</label>
+                    <!-- <input class="form-control" type="text" name="address" id="address" required> -->
+                    <input type="text" name="address" class="form-control" id="address" required></input>
+                </div>
+            </div>
+            <div class="form-group row">
+
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-3">
+                    <label class=" control-label" for="password1">Password </label>
+                    <input class="form-control" type="password" name="password1" id="password" required>
+                </div>
+                <div class="col-sm-3">
+                    <label class="control-label" for="password2">Confirm Password</label>
+                    <input class="form-control" type="password" name="password2" id="password2" required>
+                </div>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary btn-outline  " value="Register">Register </button>
+            {% if g.user is none %}
+            <div class="checkbox ">
+                <h6>Already have an account?</h6>
+                <a class="btn btn-sm btn-secondary" href={{ url_for('auth.login') }}>Login</a>
+            </div>
+            {% endif %}
+    </div>
+
+    </form>
+    </div>
+    </div>
+</body>
+<!-- <style>
+    body {
+        background: url('https://www.athletadesk.com/wp-content/uploads/2016/08/join-background-300x191.jpg') fixed;
+        background-size: cover;
+    }
+</style> -->
+
+{% endblock %}

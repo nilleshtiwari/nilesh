@@ -1,0 +1,132 @@
+.pagination-page-info {
+    padding: .6em;
+    padding-left: 0;
+    width: 40em;
+    margin: .5em;
+    margin-left: 0;
+    font-size: 12px;
+}
+.pagination-page-info b {
+    color: rgb(241, 247, 246);
+    background: #0f0505;
+    padding-left: 2px;
+    padding: .1em .25em;
+    font-size: 100%;
+}
+
+.card-text-small{
+    font-style: italic;
+    color: rgb(61, 58, 75);
+    background-color: rgb(223, 229, 234);
+}
+
+.card-title{
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(223, 229, 234)
+    
+}
+.card-body{
+    background-color: rgb(233, 231, 240) ;
+    font-style: italic;
+    font-size: larger;
+    
+    
+}
+.card-header{
+    background-color: rgb(233, 231, 240) ;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url('https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg');
+  
+   /* Full height */
+    height: 100%;
+    color: white;
+    /* Center and scale the image nicely */
+    background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+  }
+
+.homepage-hero{
+    background-color: antiquewhite;
+}
+
+.large--desktop{
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.image{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+ body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+
+.checkbox{
+    margin-top: 2%;
+}
+
+#editButton {
+    width: 25px;
+    height: 25px;
+}
+
+#deleteButton{
+    width: 25px;
+    height: 25px;
+}
+
+
+.font-weight-normal{
+    margin-top: 1%;
+}
+
+.bodyUpdate{
+    /* The image used */
+    background-image: url('https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg');
+  
+   /* Full height */
+    height: 100%;
+    color: white;
+    /* Center and scale the image nicely */
+    background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}
+
+.bodyRegister{
+    /* The image used */
+    background-image: url('https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg');
+  
+   /* Full height */
+    height: 100%;
+    color: white;
+    /* Center and scale the image nicely */
+    background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}

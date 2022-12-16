@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}
+Edit {{ g.user['FirstName'] }}
+{% endblock %}
+{% block content %}
+<body class="bodyUpdate" >
+    <div class="container dark-background ">
+    <form method="post" class="form-update" style="color:white">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+    <h1 class="h3 mb-3 font-weight-normal">Employee Update Form</h1>
+    <div class="form-group row">
+        <div class="col-sm-3">
+            <label class="form-label" for="FirstName">First Name</label>
+            <input type="text" name="FirstName" id="FirstName" value={{ employee.FirstName }} required>
+        
+        </div>
+        <div class="col-sm-3">
+            <label class="form-label" for="LastName">Last Name</label>
+            <input type="text" name="LastName" id="LastName" value={{ employee.LastName }} required>
+        </div>
+        
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-3">
+            <label class="form-label" for="email_address">Email address</label>
+        
+        <input type="email" name="email_address" id="email_address" value={{ employee.email_address }} required>
+        </div>
+
+        <div class="col-sm-3">
+            <label class="form-label" for="PhoneNumber">Phone number</label>
+        
+            <input type="tel" name="PhoneNumber" id="PhoneNumber" value={{ employee.phonenumber }}  required>
+        </div>
+
+    </div>
+    <div class="form-group row">
+        
+        <div class="col-sm-3">
+            <label class="form-label" for="address">Address</label>
+            <input type="text" name="address" id="address" value={{ employee.address }} required>
+        </div>
+        <div class="col-sm-3">
+            <label class="form-label" for="DOB">Date of birth</label>
+            <br>
+            <input type="date" name="DOB" id="FirstName" value={{ employee.dateofbirth }} required>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-sm-3">
+            <label for="employee-role">Choose a role:</label>
+        <select name="employee-role" id="employee-role">
+            {% if employee.employee_role == 1 %}
+            <option value="1" selected>Admin</option>
+            <option value="2"  >Employee</option>
+            {% elif employee.employee_role == 2 %}
+            <option value="1" >Admin</option>
+            <option value="2" selected>Employee</option>
+            {% else %}
+            <option value="1" >Admin</option>
+            <option value="2" >Employee</option>
+            <option value="2" selected>None</option>
+            {% endif %}
+        </select>
+        </div>
+        
+    </div>
+    <input style="color: white; background-color: rgb(152, 22, 24) " class="danger" type="submit" value="Update" onclick="return confirm('Are you sure?');">
+    </div>
+</body>
+
+
+
+{% endblock %}

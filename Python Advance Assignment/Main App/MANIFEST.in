@@ -1,0 +1,6 @@
+include LICENSE.rst
+include flaskApp/schema.sql
+graft flaskApp/static
+graft flaskApp/templates
+graft tests
+global-exclude *.pyc
