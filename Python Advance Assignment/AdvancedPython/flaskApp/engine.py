@@ -41,11 +41,11 @@ def index():
         "select * from  employee order by employee.id desc ",
     ).fetchall() #return a list of sqlit.Row objects which can be queried later
 
-    pagination = Pagination(page=page, total=len(Employee), search=search, record_name='Employee')
+    pagination = Pagination(page=page, total=len(Employee), search=search, record_name='employee')
 
     if request.method == 'POST':
         error = None
-        employee_email_to_update = request.form.get('employee-name').strip()
+        employee_email_to_update = request.form.get('employee-name')
         employee_email_to_delete = request.form.get('employee-delete')
         if employee_email_to_update:
             return redirect(url_for('engine.update', email_address=employee_email_to_update))
@@ -62,13 +62,22 @@ def index():
 
 
 
-@bp.route('/employee/detail', methods=('POST', 'GET'))
+@bp.route('/employee/detail/<id>', methods=('POST', 'GET'))
 @login_required
-def employee_details():
+@admin_required
+def employee_details(id):
     """ This function will give the details of single employee who is currently logged in """
+    db = get_db()
+    Employee =  db.execute(
+            "SELECT * FROM employee WHERE employee.id = ?", (id,)
+        ).fetchone()
+    return render_template('employee/employee_detail.html', employee=Employee)
+
+@bp.route('/employee/profile',methods=['GET','POST'])
+@login_required
+def profile():
     Employee = g.user
     return render_template('employee/details.html', employee=Employee)
-
 
 @bp.route('/employee/update/<email_address>', methods=('POST','GET'))
 @login_required
@@ -149,7 +158,9 @@ def delete(email_address):
         data = {'email_address':email_address}
         delete_api_db_data(data)
     except:
-        message = 'Something Went Wrong'  # if commit falis error message will popup
+        message = 'Something Went Wrong!'  # if commit falis error message will popup
+        flash(message,category='danger')
+        return redirect(url_for('engine.index'))
     else:
         current_app.logger.warning(
         f"A user deleted the employee whose email address was {email_address} >>>{session['ctx']}"

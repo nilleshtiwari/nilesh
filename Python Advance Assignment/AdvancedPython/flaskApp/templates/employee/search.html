@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block title %}
+Search Page
+{%endblock%}
+{% block content %}
+<h3 style="margin-top: 20px; margin-left: 20px;">Search result matching with "{{ searched }}" from the Employee list .......... </h3>
+<div class="row" style="margin-top:20px; margin-left:20px; margin-right: 5px;">
+<div class="col-12">
+    <br>
+    {{ pagination.info }}
+    {{ pagination.links }}
+    <table class="table table-hover table-dark styled-table">
+        <thead>
+            <tr>
+                <!-- Your Columns HERE -->
+                <th scope="col">Full Name</th>
+                <th scope="col">Email Address</th>
+                <th scope="col">Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Your rows inside the table HERE: -->
+            {% for emp in employee_matched_result %}
+            <tr>
+                {% if session['role']=='admin' %}
+                <td><a href={{ url_for('engine.employee_details',id=emp[7]) }}>{{ emp[0]+ " "+emp[1] }}</a> </td>
+                {% else %}
+                <td>{{ emp[0]+ " "+emp[1] }} </td>
+
+                {% endif %}
+                <td>{{ emp[2] }}</td>
+                <td>{{ emp[4] }}</td>
+                <td>
+                    {% if session['role']=='admin' %}
+                    {% include 'includes/delete_employee_modals.html' %}
+                    <div class="row">
+                        <form method="post" action={{ url_for('engine.index') }}>
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <input id="employee-name" name="employee-name" type="hidden" value={{ emp[2] }}>
+                            <button type="submit" class="btn btn-outline btn-info" value="Register"><img id="editButton" 
+                                src="https://fontawesomeicons.com/images/png/black/edit/outline-4x.png"></button>
+                        </form>
+                        <button class="btn btn-outline btn-danger button" data-toggle="modal" data-target="#Modal-Delete-Employee-{{ emp[0] }}"><img id="deleteButton" 
+                            src="https://fontawesomeicons.com/images/png/black/delete/outline-4x.png"></button>
+                    </div>
+                    
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {{ pagination.links }}
+</div>
+{% endblock %}

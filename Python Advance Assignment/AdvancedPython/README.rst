@@ -54,7 +54,7 @@ Security Implementation
 3. Appropriate measure is taken to protect app from the SQL injection.
 4. Major rights are given to admin only.
 
---> Loggin functionality is implemented.
+--> Logging functionality is implemented.
 
 Database
 ----

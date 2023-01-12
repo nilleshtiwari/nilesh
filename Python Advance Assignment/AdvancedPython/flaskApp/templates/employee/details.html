@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}
+About {{ employee['FirstName']  }}
+{%endblock%}
+{% block content %}
+
+
+<body class="light-background">
+    <h1 class="text-centre heading">Hello, {{ employee.FirstName }}</h1>
+    <br>
+    <section class="container">
+        <div class="card border-dark mb-3" >
+            <div class="card-header">
+                <h5 class="card-title">{{ employee.FirstName }} {{ employee.LastName }}</h5>
+                <p class="card-text-small">
+                    {{ employee.email_address }}
+                </p>
+            </div>
+            <div class="card-body text-dark">
+                    First Name : {{ employee.FirstName }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Last Name : {{ employee.LastName }}<br><br>
+                    Email Id : {{ employee.email_address }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Phone Number : {{ employee.phonenumber }}<br><br>
+                    Date of Birth : {{ employee.dateofbirth }}<br><br>
+                    Address : {{ employee.address }}<br><br>
+                    {% if employee.employee_role==1 %}
+                        Role : admin <br><br
+                    {% elif employee.employee_role==2 %}
+                        Role : employee <br><br
+                    {% else %}
+                    Role : None (contact admin) <br><br
+                    {% endif %}
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+   body{
+    background: url('https://wallpaperaccess.com/download/profile-picture-1672447');
+    background-size: cover;
+   } 
+</style>
+
+{%endblock%}

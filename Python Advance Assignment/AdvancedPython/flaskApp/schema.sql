@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS employee;
 DROP TABLE IF EXISTS employeeRole;
+DROP TABLE IF EXISTS address
 
 
 CREATE TABLE employeeRole (
@@ -15,8 +16,8 @@ CREATE TABLE employee (
   email_address TEXT UNIQUE NOT NULL ,
   dateofbirth DATE,
   phonenumber INTEGER NOT NULL,
-  address TEXT NOT NULL,
   employee_role INTEGER,
   password TEXT NOT NULL,
   FOREIGN KEY (employee_role) REFERENCES employeeRole (id)
 );
+

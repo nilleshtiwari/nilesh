@@ -5,6 +5,7 @@ LOGIN PAGE
 {% block content%}
 <body class="text-center dark-background bg-img">
     <div class="container">
+        
         <form method="POST" class="form-signin" style="color: white; margin-top:100px;">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
             <h1 class="h3 mb-3 font-weight-normal">
@@ -21,11 +22,10 @@ LOGIN PAGE
                 <input type="password" name="password" id="password" required>
             </div>
            
-            <button type="submit" class=" btn-outline btn-primary " value="Register">Login</button>
+            <button id="submit-btn" type="submit" class=" btn-outline btn-primary " value="Register">Login</button>
 
             <div class="checkbox">
-                <h6>Do not have an account ?</h6>
-                <a class="btn btn-sm btn-secondary" href={{ url_for('auth.register') }}>Register</a>
+                <a href={{ url_for('auth.register') }} style="color: #24c64f;">Do not have an account yet ?</a>
             </div>
         </form>
 </body>

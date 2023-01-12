@@ -180,7 +180,7 @@ def login():
             user_name = user['FirstName']  # Getting user's firstname from the user object
             message = f'You are logged in as {user_name}'  # if user regeistration done it shows successfull message
             flash(message, category='success')
-            return redirect(url_for('index'))
+            return redirect(url_for('engine.home'))
 
         flash(error)
 
