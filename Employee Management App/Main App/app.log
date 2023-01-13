@@ -608,3 +608,17 @@ jinja2.exceptions.UndefinedError: 'header' is undefined
 [2022-12-29 22:28:21,707] INFO | _internal >>> 127.0.0.1 - - [29/Dec/2022 22:28:21] "GET /auth/login HTTP/1.1" 200 -
 [2022-12-29 22:28:21,747] INFO | _internal >>> 127.0.0.1 - - [29/Dec/2022 22:28:21] "GET /static/style.css HTTP/1.1" 200 -
 [2022-12-29 22:28:21,754] INFO | _internal >>> 127.0.0.1 - - [29/Dec/2022 22:28:21] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-01-13 12:43:50,904] INFO | setup >>> App started...
+[2023-01-13 12:43:50,911] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.151.173:5000
+[2023-01-13 12:43:50,912] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[2023-01-13 12:43:57,959] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:43:57] "[32mGET / HTTP/1.1[0m" 302 -
+[2023-01-13 12:43:58,343] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:43:58] "GET /auth/login HTTP/1.1" 200 -
+[2023-01-13 12:43:58,508] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:43:58] "GET /static/alert.js HTTP/1.1" 200 -
+[2023-01-13 12:43:58,545] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:43:58] "GET /static/style.css HTTP/1.1" 200 -
+[2023-01-13 12:44:02,369] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:44:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-01-13 12:44:23,692] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:44:23] "GET /auth/register HTTP/1.1" 200 -
+[2023-01-13 12:44:23,729] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:44:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-01-13 12:44:23,739] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:44:23] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
