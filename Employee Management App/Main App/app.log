@@ -622,3 +622,186 @@ jinja2.exceptions.UndefinedError: 'header' is undefined
 [2023-01-13 12:44:23,692] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:44:23] "GET /auth/register HTTP/1.1" 200 -
 [2023-01-13 12:44:23,729] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:44:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 [2023-01-13 12:44:23,739] INFO | _internal >>> 127.0.0.1 - - [13/Jan/2023 12:44:23] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-01 09:49:33,879] INFO | setup >>> App started...
+[2023-02-01 09:49:33,896] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://127.0.0.1:5000
+[2023-02-01 09:49:33,896] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[2023-02-01 09:49:44,927] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:44] "[32mGET / HTTP/1.1[0m" 302 -
+[2023-02-01 09:49:45,015] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:45] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-01 09:49:45,241] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:45] "GET /static/alert.js HTTP/1.1" 200 -
+[2023-02-01 09:49:45,249] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:45] "GET /static/style.css HTTP/1.1" 200 -
+[2023-02-01 09:49:45,441] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-02-01 09:49:52,496] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:52] "[32mGET /employee/profile HTTP/1.1[0m" 302 -
+[2023-02-01 09:49:52,504] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:52] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-01 09:49:52,544] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-01 09:49:52,544] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:52] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-01 09:49:54,685] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:54] "[32mGET /employee HTTP/1.1[0m" 302 -
+[2023-02-01 09:49:54,685] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:54] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-01 09:49:54,717] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-01 09:49:54,717] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:54] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-01 09:49:55,164] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:55] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-01 09:49:55,188] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-01 09:49:55,188] INFO | _internal >>> 127.0.0.1 - - [01/Feb/2023 09:49:55] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:45:50,189] INFO | setup >>> App started...
+[2023-02-02 22:45:50,209] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.229.173:5000
+[2023-02-02 22:45:50,209] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[2023-02-02 22:45:56,820] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:45:56] "[32mGET / HTTP/1.1[0m" 302 -
+[2023-02-02 22:45:56,911] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:45:56] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-02 22:45:57,062] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:45:57] "GET /static/alert.js HTTP/1.1" 200 -
+[2023-02-02 22:45:57,072] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:45:57] "GET /static/style.css HTTP/1.1" 200 -
+[2023-02-02 22:45:59,432] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:45:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-02-02 22:46:25,229] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:25] "GET /auth/register HTTP/1.1" 200 -
+[2023-02-02 22:46:25,268] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:25,282] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:25] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:31,322] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:31] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-02 22:46:31,371] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:31,380] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:31] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:35,363] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:35] "[32mGET /employee/profile HTTP/1.1[0m" 302 -
+[2023-02-02 22:46:35,376] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:35] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-02 22:46:35,423] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:35,424] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:35] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:37,696] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:37] "[32mGET /employee HTTP/1.1[0m" 302 -
+[2023-02-02 22:46:37,705] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:37] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-02 22:46:37,746] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:37,747] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:37] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:56,391] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:56] "[32mPOST /auth/login HTTP/1.1[0m" 302 -
+[2023-02-02 22:46:56,410] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:56] "GET /home HTTP/1.1" 200 -
+[2023-02-02 22:46:56,449] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:46:56,459] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:46:56] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:47:26,939] DEBUG | connectionpool >>> Starting new HTTP connection (1): api:5001
+[2023-02-02 22:47:29,237] ERROR | app >>> Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\util\connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\sudhe\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\sudhe\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\sudhe\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\sudhe\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\sudhe\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Users\sudhe\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000023EFE502620>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='api', port=5001): Max retries exceeded with url: http://127.0.0.1:5001/hg (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023EFE502620>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\flaskApp\auth.py", line 37, in wrapped_view
+    return view(**kwargs)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\flaskApp\auth.py", line 48, in wrapped_view
+    return view(**kwargs)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\flaskApp\engine.py", line 195, in search
+    data_from_api = fetch_data_from_api(Searched)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\flaskApp\engine.py", line 209, in fetch_data_from_api
+    data = requests.get("http://127.0.0.1:5001/"+url_data,proxies={"http": "http://api:5001/"}, verify=False)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\sudhe\OneDrive\Desktop\Github\Employee Management App\Main App\env\lib\site-packages\requests\adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPConnectionPool(host='api', port=5001): Max retries exceeded with url: http://127.0.0.1:5001/hg (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023EFE502620>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')))
+[2023-02-02 22:47:29,394] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:47:29] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+[2023-02-02 22:47:43,588] INFO | engine >>> A user visited the home page >>> {'empId': 6}
+[2023-02-02 22:47:43,634] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:47:43] "GET /employee HTTP/1.1" 200 -
+[2023-02-02 22:47:43,676] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:47:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:47:43,694] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:47:43] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:47:52,414] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:47:52] "GET /employee/profile HTTP/1.1" 200 -
+[2023-02-02 22:47:52,463] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:47:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:47:52,484] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:47:52] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:07,454] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:07] "GET /auth/register HTTP/1.1" 200 -
+[2023-02-02 22:48:07,499] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:07,511] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:07] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:10,367] INFO | engine >>> A user visited the home page >>> {'empId': 6}
+[2023-02-02 22:48:10,376] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:10] "GET /employee HTTP/1.1" 200 -
+[2023-02-02 22:48:10,423] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:10,431] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:10] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:14,327] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:14] "GET /auth/register HTTP/1.1" 200 -
+[2023-02-02 22:48:14,379] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:14,390] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:14] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:16,056] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:16] "[32mGET /auth/logout HTTP/1.1[0m" 302 -
+[2023-02-02 22:48:16,062] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:16] "[32mGET / HTTP/1.1[0m" 302 -
+[2023-02-02 22:48:16,078] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:16] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-02 22:48:16,133] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:48:16,157] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:48:16] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-02 22:51:06,419] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:51:06] "GET /auth/register HTTP/1.1" 200 -
+[2023-02-02 22:51:06,465] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:51:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-02 22:51:06,474] INFO | _internal >>> 127.0.0.1 - - [02/Feb/2023 22:51:06] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-16 19:30:33,273] INFO | setup >>> App started...
+[2023-02-16 19:30:33,286] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.47.173:5000
+[2023-02-16 19:30:33,286] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[2023-02-16 19:30:37,041] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:30:37] "[32mGET / HTTP/1.1[0m" 302 -
+[2023-02-16 19:30:37,169] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:30:37] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-16 19:30:37,313] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:30:37] "GET /static/alert.js HTTP/1.1" 200 -
+[2023-02-16 19:30:37,313] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:30:37] "GET /static/style.css HTTP/1.1" 200 -
+[2023-02-16 19:30:47,870] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:30:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-02-16 19:31:02,958] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:02] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-16 19:31:02,983] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-16 19:31:02,983] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:02] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-16 19:31:05,366] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:05] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-16 19:31:05,382] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:05] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-16 19:31:05,390] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-16 19:31:09,545] INFO | setup >>> App started...
+[2023-02-16 19:31:09,545] INFO | _internal >>> [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.47.173:5000
+[2023-02-16 19:31:09,545] INFO | _internal >>> [33mPress CTRL+C to quit[0m
+[2023-02-16 19:31:11,957] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:11] "GET /auth/login HTTP/1.1" 200 -
+[2023-02-16 19:31:12,045] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:12] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
+[2023-02-16 19:31:12,045] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-16 19:31:34,134] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:34] "GET /auth/register HTTP/1.1" 200 -
+[2023-02-16 19:31:34,158] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2023-02-16 19:31:34,158] INFO | _internal >>> 127.0.0.1 - - [16/Feb/2023 19:31:34] "[36mGET /static/alert.js HTTP/1.1[0m" 304 -
